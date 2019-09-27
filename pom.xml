@@ -42,7 +42,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<testbed.adaptor.version>1.2.12</testbed.adaptor.version>
+		<testbed.adaptor.version>1.2.24</testbed.adaptor.version>
 		<maven.shade.version>3.1.0</maven.shade.version>
 		<maven.compiler.version>3.7.0</maven.compiler.version>
 		<dockerfile-maven-version>1.0.0</dockerfile-maven-version>
@@ -136,12 +136,12 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.6.3</version>
+			<version>2.9.10</version>
 		</dependency>
 		<dependency>
 			<groupId>driver.eu</groupId>
 			<artifactId>xml-json-to-avro-mapper</artifactId>
-			<version>1.2.0</version>
+			<version>1.2.4</version>
 		</dependency>
 	</dependencies>
 
