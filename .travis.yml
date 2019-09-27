@@ -1,0 +1,20 @@
+language: java
+jdk:
+- openjdk8
+dist: trusty
+
+env:
+  matrix:
+  - VERSION=1.0.4
+
+install: mvn install
+
+script: 
+  - docker build -t drivereu/geoserver-testbed-adapter:latest -t drivereu/geoserver-testbed-adapter:$VERSION .
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push drivereu/geoserver-testbed-adapter
+
+cache:
+  directories:
+  - ".autoconf"
+  - "$HOME/.m2"
